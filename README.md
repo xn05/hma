@@ -1,20 +1,4 @@
-# humanmapclaude — Out of Africa · Human Migration Atlas
-
-A fully static site. No server, no build step, no network: double-click `index.html`.
-
-```
-index.html          page shell, loads the scripts below in order
-css/style.css       styling
-js/db.js            the database engine (tables, queries, search, validation)
-js/map.js           SVG map: pan/zoom, arrows, nodes
-js/app.js           left panel (Journey + Peoples tabs), search, details card
-data/places.js      TABLE places   id, lon, lat, name
-data/stems.js       TABLE stems    shared route prefixes, used as $ID
-data/journey.js     TABLE journey  id, parent, date, note   (Journey folder tree)
-map/map.svg         the base world map (your SVG, cleaned up; transparent background)
-data/peoples/*.js   TABLE peoples  country, name, note, routes[]  (one file per region)
-tools/validate.js   node tools/validate.js  -> checks every reference resolves
-```
+# HMA · Human Migration Atlas
 
 ## The map
 `map/map.svg` is loaded as an `<image>` by `js/map.js`, so it works from a plain double-click (no fetch).
