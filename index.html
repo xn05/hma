@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Out of Africa · Human Migration Atlas</title>
+<link rel="stylesheet" href="css/style.css"></head><body data-tab="ex">
+<aside><h1>🌍 Out of Africa <span>· Migration Atlas</span></h1>
+<div class="tabs"><button data-t="ex" class="on">📁 Journey</button><button data-t="pp">🧬 Peoples</button></div>
+<div class="body"><input id="q" placeholder="Search places…" autocomplete="off"><div id="crumb"></div><div id="list"></div><div id="info"></div></div></aside>
+<main><svg id="map"><rect x="-6000" y="-4000" width="16000" height="10000" fill="#0d1a33"/><g id="bg"></g><g id="lay"></g></svg>
+<div class="ctl"><button id="zi">+</button><button id="zo">−</button><button id="zr" title="Reset">⌂</button></div>
+<div id="hint"></div><div id="key"><button id="keyt" aria-expanded="true" title="Show / hide the key">🗝️ Key <b id="keyx">–</b></button>
+<div id="keyb">
+<div class="kt">Markers</div>
+<div class="kr"><i class="sw pulse" style="background:#f5b942"></i>Current folder / end of a route</div>
+<div class="kr" data-only="ex"><i class="sw" style="background:#4fd1c5"></i>Next stops (click = select, double-click = enter)</div>
+<div class="kr" data-only="ex"><i class="sw" style="background:#8da0c4"></i>Stops you already passed</div>
+<div class="kr" data-only="ex"><i class="sw ring"></i>Selected place</div>
+<div class="kt">Arrows</div>
+<div class="kr"><i class="ar">➤</i>Direction people travelled; label = arrival date</div>
+<div class="kr" data-only="ex"><i class="grad"></i>Gold = earlier, teal = later</div>
+<div class="kr" data-only="pp"><i class="sw" style="background:#f5b942"></i>Main ancestry route</div>
+<div class="kr" data-only="pp"><i class="sw" style="background:#4fd1c5"></i><i class="sw" style="background:#f472b6"></i><i class="sw" style="background:#a78bfa"></i>Later migration waves</div>
+<div class="kr" data-only="pp"><i class="sw" style="background:#6b7fa8;opacity:.5"></i>Other peoples in this country</div>
+<div class="kt">Dates</div>
+<div class="kr m">~ approximate · kya = thousand years ago · CE = common era</div>
+<div class="kr m">Drag to pan · scroll or +/− to zoom · ⌂ resets</div>
+</div></div></main>
+<script src="js/db.js"></script>
+<script src="data/places.js"></script>
+<script src="data/stems.js"></script>
+<script src="data/journey.js"></script>
+<script src="data/peoples/africa.js"></script>
+<script src="data/peoples/mideast.js"></script>
+<script src="data/peoples/europe.js"></script>
+<script src="data/peoples/asia.js"></script>
+<script src="data/peoples/americas.js"></script>
+<script src="data/peoples/oceania.js"></script>
+<script src="js/map.js"></script>
+<script src="js/app.js"></script>
+</body></html>
